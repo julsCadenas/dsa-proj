@@ -1,9 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+  
 body{
     background-color: #e8eae0;
     margin:0;
 }
 
-.dahonicare{
+.template{
     position: relative;
     max-width: 100%;
 }
@@ -11,8 +15,9 @@ body{
 #dahon{
     position: absolute;
     height: 100vh;
-    width: 600px;
+    width: auto; 
     border: 0;
+    float: left;
 }
 
 #icare{
@@ -20,19 +25,21 @@ body{
     height: 10%;
     width: 10%;
     margin-top: 150px;
-    margin-left: 525px;
+    margin-left: 650px;
+    
 }
 
 #feutech{
     position: absolute;
     transform:scale(70%,70%);
-    margin-top: 280px;
-    left: 130px;
+    margin-top: 290px;
+    left: 220px;
+    float: left;
 }
 
 #tams {
     position: absolute;
-    
+    float: right;
     top: 45.4%;
     left: 72%;
     bottom: 0;
@@ -40,3 +47,79 @@ body{
     transform: scale(30%);
 }
 
+.buttons {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.buttons button {
+    height: 25px;
+    width: 180px;
+    border: none;
+    background-color: #DDE1CD;
+    display: block;
+    margin-bottom: 10px; 
+    border-radius: 10px;
+    font-family: poppins;
+    font-size: 12px;
+    font-weight: 799;
+    color: #483c32;
+    transition: transform 0.5s;
+}
+
+.buttons button:hover{
+    transform:scale(3.5);
+}
+
+@keyframes hoverEnlarge{
+    from{    
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}
+
+@keyframes hoverShrink{
+    from{    
+        transform: scale(1.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.appointmentButton{
+    position: relative;
+    transform: scale(300%);
+    bottom: 70px;
+    left: 340px;
+    text-decoration: none;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.consultationButton{
+    position: relative;
+    transform: scale(300%);
+    bottom: 5px;
+    left: 340px;
+    text-decoration: none;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.aboutButton{
+    position: relative;
+    transform: scale(300%);
+    bottom: -60px;
+    left: 340px;
+    text-decoration: none;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+
+  
